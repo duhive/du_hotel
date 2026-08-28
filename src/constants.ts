@@ -21,22 +21,22 @@ export const REGULAR_CURRICULUM: CurriculumItem[] = [
   },
   {
     id: 3,
-    title: "관광 칼럼 / 매거진",
+    title: "서비스기업경영전략분석",
     period: "월간",
-    description: "관광·호스피탈리티 산업 트렌드와 학회원들의 독창적인 통찰이 담긴 칼럼 및 학회 매거진을 기획하고 정기적으로 발행합니다.",
-    kpi: "에세이 리서치 및 학회 매거진 기획안 구성",
-    outcomes: ["학술 칼럼 리포트", "HIVE 매거진"]
+    description: "호스피탈리티 및 주요 서비스 기업의 비즈니스 모델과 경영 전략, 서비스 혁신 사례를 다각도로 분석하고 실무 인사이트를 도출합니다.",
+    kpi: "서비스 기업 경영 전략 분석 리포트 작성 및 발표",
+    outcomes: ["경영 전략 분석 리포트", "기업 케이스 스터디"]
   }
 ];
 
 export const MAIN_ACTIVITIES: CurriculumItem[] = [
   {
     id: 1,
-    title: "로컬 크리에이터 프로젝트",
+    title: "글로컬 MICE 기획 프로젝트",
     period: "1학기",
-    description: "지역의 숨겨진 가치를 발굴하고 로컬 비즈니스 모델을 기획하여 지역 관광을 활성화합니다.",
-    kpi: "로컬 비즈니스 제안서 완성 및 실무 검토",
-    outcomes: ["로컬 크리에이터 로드맵", "프로젝트 포트폴리오"]
+    description: "지역의 고유한 자원과 글로벌 서비스 트렌드를 융합하여 경쟁력 있는 글로컬 MICE 비즈니스 모델 및 컨벤션·이벤트를 기획합니다.",
+    kpi: "글로컬 MICE 기획 제안서 완성 및 실무 검토",
+    outcomes: ["글로컬 MICE 기획안", "프로젝트 포트폴리오"]
   },
   {
     id: 2,
