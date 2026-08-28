@@ -1,0 +1,6 @@
+{
+  "name": "HIVE - Daegu University Hospitality Management Society",
+  "description": "Official website of HIVE, a strategy-driven Hospitality Management Society at Daegu University, focusing on consulting, business modeling, and industry leadership.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

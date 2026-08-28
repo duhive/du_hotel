@@ -1,0 +1,255 @@
+{
+  "entities": {
+    "application": {
+      "title": "Application",
+      "description": "An application submitted by a prospective candidate to join HIVE",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Full name of the applicant"
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the applicant"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number of the applicant"
+        },
+        "department": {
+          "type": "string",
+          "description": "Department/Major of the applicant"
+        },
+        "studentId": {
+          "type": "string",
+          "description": "Student ID of the applicant"
+        },
+        "motivation": {
+          "type": "string",
+          "description": "Motivation to join the society"
+        },
+        "strengths": {
+          "type": "string",
+          "description": "Personal strengths and relevant experiences"
+        },
+        "activityProposal": {
+          "type": "string",
+          "description": "Proposed activities or project ideas for HIVE"
+        },
+        "interestTrack": {
+          "type": "string",
+          "description": "Preferred area of interest"
+        },
+        "photo": {
+          "type": "string",
+          "description": "Base64-encoded profile or introduction image"
+        },
+        "submittedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of submission"
+        }
+      },
+      "required": ["name", "email", "phone", "department", "studentId", "motivation", "strengths", "activityProposal", "interestTrack", "photo", "submittedAt"]
+    },
+    "column": {
+      "title": "Column",
+      "description": "An academic column submitted to H&T Column",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the column"
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Subtitle of the column"
+        },
+        "excerpt": {
+          "type": "string",
+          "description": "Excerpt or short summary of the column"
+        },
+        "content": {
+          "type": "string",
+          "description": "Full markdown content of the column"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category of the column"
+        },
+        "author": {
+          "type": "object",
+          "description": "Author details of the column",
+          "properties": {
+            "name": { "type": "string" },
+            "role": { "type": "string" },
+            "affiliation": { "type": "string" },
+            "image": { "type": "string" }
+          },
+          "required": ["name", "role", "affiliation", "image"]
+        },
+        "date": {
+          "type": "string",
+          "description": "Formatted date of the column"
+        },
+        "readTime": {
+          "type": "string",
+          "description": "Calculated reading time of the column"
+        },
+        "likes": {
+          "type": "number",
+          "description": "Number of likes the column received"
+        },
+        "tags": {
+          "type": "array",
+          "description": "List of tags associated with the column",
+          "items": { "type": "string" }
+        },
+        "coverImage": {
+          "type": "string",
+          "description": "Cover image URL of the column"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        }
+      },
+      "required": ["title", "subtitle", "excerpt", "content", "category", "author", "date", "readTime", "likes", "tags", "coverImage", "createdAt"]
+    },
+    "weeklySession": {
+      "title": "Weekly Session",
+      "description": "A weekly session in the academic curriculum roadmap",
+      "type": "object",
+      "properties": {
+        "week": {
+          "type": "number",
+          "description": "Week number"
+        },
+        "track": {
+          "type": "string",
+          "description": "The educational track or category"
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the session"
+        },
+        "description": {
+          "type": "string",
+          "description": "Short description of the session activity"
+        },
+        "deliverable": {
+          "type": "string",
+          "description": "The expected outcome/deliverable"
+        },
+        "semester": {
+          "type": "string",
+          "description": "Semester, e.g. 1학기 or 2학기"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        }
+      },
+      "required": ["week", "track", "title", "description", "deliverable", "semester", "createdAt"]
+    },
+    "customMember": {
+      "title": "Custom Member",
+      "description": "A dynamically added member profile registered by users",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Full name of the member"
+        },
+        "role": {
+          "type": "string",
+          "description": "Role in the society"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category: GENERATIONS or Global Service Group or Tourism & AI Group"
+        },
+        "image": {
+          "type": "string",
+          "description": "URL of the member's profile image"
+        },
+        "bio": {
+          "type": "string",
+          "description": "A short bio of the member"
+        },
+        "education": {
+          "type": "string",
+          "description": "Education background"
+        },
+        "skills": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Skills or areas of interest"
+        },
+        "contact": {
+          "type": "string",
+          "description": "Email or contact info"
+        },
+        "isAlumni": {
+          "type": "boolean",
+          "description": "Whether the member is an alumnus"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        }
+      },
+      "required": ["name", "role", "category", "image", "bio", "education", "skills", "contact", "createdAt"]
+    },
+    "seminarTopic": {
+      "title": "Seminar Topic",
+      "description": "An academic seminar presentation topic submitted by members",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "Title of the presentation topic" },
+        "category": { "type": "string", "description": "Category or sub-track" },
+        "description": { "type": "string", "description": "Detailed description of the topic" },
+        "round": { "type": "number", "description": "Presentation round: 1 for 1차 학술 세미나, 2 for 2차 글로벌 관광 이슈" },
+        "presenter": {
+          "type": "object",
+          "description": "Presenter info including profile image and role",
+          "properties": {
+            "name": { "type": "string" },
+            "role": { "type": "string" },
+            "affiliation": { "type": "string" },
+            "image": { "type": "string" }
+          },
+          "required": ["name", "role", "affiliation", "image"]
+        },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" }
+      },
+      "required": ["title", "category", "description", "round", "presenter", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/applications/{applicationId}": {
+      "schema": "application",
+      "description": "Collection of submitted applications"
+    },
+    "/columns/{columnId}": {
+      "schema": "column",
+      "description": "Collection of academic columns"
+    },
+    "/weeklySessions/{sessionId}": {
+      "schema": "weeklySession",
+      "description": "Collection of weekly academic sessions"
+    },
+    "/customMembers/{memberId}": {
+      "schema": "customMember",
+      "description": "Collection of dynamically added member profiles"
+    },
+    "/seminarTopics/{topicId}": {
+      "schema": "seminarTopic",
+      "description": "Collection of academic seminar topics"
+    }
+  }
+}

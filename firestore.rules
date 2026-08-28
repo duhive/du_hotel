@@ -1,0 +1,37 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global default-deny safety net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    match /applications/{applicationId} {
+      allow read, write: if true;
+    }
+
+    match /columns/{columnId} {
+      allow read, write: if true;
+    }
+
+    match /weeklySessions/{sessionId} {
+      allow read, write: if true;
+    }
+
+    match /communityPosts/{postId} {
+      allow read, write: if true;
+    }
+
+    match /customMembers/{memberId} {
+      allow read, write: if true;
+    }
+
+    match /seminarTopics/{topicId} {
+      allow read, write: if true;
+    }
+
+    match /notices/{noticeId} {
+      allow read, write: if true;
+    }
+  }
+}

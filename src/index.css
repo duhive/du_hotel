@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-hive-green: #0B5A42;
+  --color-hive-light-green: #10B981;
+  --color-accent: #0B5A42;
+  --color-navy-900: #051429;
+  --color-ivory: #FFFFFF;
+  --color-silver: #64748B;
+  
+  --font-serif: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Inter", sans-serif;
+  --font-signature: "Alex Brush", cursive;
+}
+
+body {
+  @apply bg-white text-navy-900 font-sans antialiased;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-hive-green to-hive-light-green;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display tracking-tight;
+}
+
+.nav-link {
+  @apply relative py-2 text-[13px] font-bold tracking-[0.15em] uppercase transition-colors hover:text-hive-green text-navy-900/60;
+}
+
+.nav-link.active {
+  @apply text-hive-green;
+}
+
+.nav-link.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-hive-green;
+}
+
+/* Member Photo Screenshot & Print Protection */
+@media print {
+  .member-photo-protected,
+  .member-photo-protected img,
+  .member-photo-container {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+
+.screen-captured .member-photo-protected,
+body.screen-captured .member-photo-protected {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  filter: blur(50px) !important;
+}
+
+.member-photo-protected {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
