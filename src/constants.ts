@@ -168,26 +168,6 @@ export const MEMBERS: Member[] = [
     education: "호텔외식관광학과 23",
     skills: ["항공경영", "사회복지"],
     contact: "TBD"
-  },
-  {
-    id: 21,
-    name: "최현우",
-    role: "YB",
-    image: "https://i.ibb.co/TGvX4D7/28.png",
-    bio: "",
-    education: "관광항공경영학과 / 영어교육과 22",
-    skills: ["항공서비스", "관광경영"],
-    contact: "TBD"
-  },
-  {
-    id: 22,
-    name: "박재환",
-    role: "YB",
-    image: "https://i.ibb.co/TGvX4D7/28.png",
-    bio: "",
-    education: "호텔외식관광학과 23",
-    skills: ["호텔경영", "외식경영"],
-    contact: "TBD"
   }
 ];
 
@@ -318,7 +298,7 @@ export const PARTNER_MEMBERS: Member[] = [
     image: "https://i.ibb.co/Z1Tk4T4L/2026-05-05-160901.png",
     bio: "",
     education: "호텔관광연구실 / 대구관광고등학교 시간강사",
-    skills: ["지역관광개발", "항공 & 우주관광"],
+    skills: ["호스피탈리티경영", "CX"],
     contact: "pyj@daegu.ac.kr",
     experience: [
       "2023. 08 한국관광공사 주관, 국제이벤트 지원사업 전문가 평가단",
