@@ -168,6 +168,26 @@ export const MEMBERS: Member[] = [
     education: "호텔외식관광학과 23",
     skills: ["항공경영", "사회복지"],
     contact: "TBD"
+  },
+  {
+    id: 21,
+    name: "최현우",
+    role: "YB",
+    image: "https://i.ibb.co/TGvX4D7/28.png",
+    bio: "",
+    education: "관광항공경영학과 / 영어교육과 22",
+    skills: ["항공서비스", "관광경영"],
+    contact: "TBD"
+  },
+  {
+    id: 22,
+    name: "박재환",
+    role: "YB",
+    image: "https://i.ibb.co/TGvX4D7/28.png",
+    bio: "",
+    education: "호텔외식관광학과 23",
+    skills: ["호텔경영", "외식경영"],
+    contact: "TBD"
   }
 ];
 
